@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 30px;
+  font-family: $font-family-sans-serif;
+  background-color: $uoc-bg;
+  color: $uoc-corporate;
+}
+
+.uoc-logo {
+  display: block;
+  margin-bottom: 20px;
+  max-width: 300px;
+  height: auto;
+}
+
+.uoc-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: $uoc-corporate;
+}
+
+.uoc-subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: $uoc-corporate;
+}
+
+.main-menu {
+  background: $uoc-bg;
+  margin-top: -80px;
+  max-width: 190px;
+  margin-left: 5px;
+  padding-top: 85px;
+  padding-bottom: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.profile-nav .primary li {
+  color: $uoc-corporate;
+  text-align: left;
+  height: 20px;
+}
+
+.about {
+  padding-right: 1px !important;
+  padding-left: 1px !important;
+}
+
+.logo img {
+  position: relative;
+  max-width: 200px;
+  margin-bottom: 10px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .columna {
+    display: none;
+  }
+}
+
+.sticky {
+  position: relative;
+  display: block;
+  z-index: 1000;
+}
+
+.main-progress-bar h4 {
+  color: $uoc-masterbrand !important;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+
+.main-progress-bar .progress {
+  height: 3px !important;
+  margin-bottom: 31px;
+}
+
+.main-progress-bar .progress-bar {
+  background: $uoc-corporate;
+}
+
+.perchantage {
+  margin-top: -30px;
+  font-size: 16px;
+  font-weight: 400;
+  color: $uoc-corporate;
+}
+
+.progress-bar {
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.profile-nav ul {
+  list-style: none;
+}
+
+.profile-nav .primary li a {
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  color: $uoc-corporate;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.profile-nav .primary li a:hover {
+  color: $uoc-masterbrand;
+}
+
+.go_to_top i {
+  font-size: 13px;
+  margin-left: 2px;
+}
+
+.social-nav {
+  text-align: center;
+}
+
+.social-nav a {
+  padding: 10px;
+  color: $uoc-corporate;
+}
+
+.social-nav a:hover {
+  color: $uoc-masterbrand;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 40%;
+  height: auto;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.columna-padre {
+  width: 100%;
+}
+
+.columna {
+  width: 25%;
+  float: left;
+}
