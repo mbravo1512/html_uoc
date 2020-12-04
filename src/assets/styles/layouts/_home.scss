@@ -1,9 +1,12 @@
 body {
   margin: 0;
-  padding: 30px;
   font-family: $font-family-sans-serif;
   background-color: $uoc-bg;
   color: $uoc-corporate;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
 }
 
 .uoc-logo {
@@ -25,17 +28,6 @@ body {
   color: $uoc-corporate;
 }
 
-.main-menu {
-  background: $uoc-bg;
-  margin-top: -80px;
-  max-width: 190px;
-  margin-left: 5px;
-  padding-top: 85px;
-  padding-bottom: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-
 .profile-nav .primary li {
   color: $uoc-corporate;
   text-align: left;
@@ -54,9 +46,19 @@ body {
   height: auto;
 }
 
-@media (max-width: 768px) {
-  .columna {
-    display: none;
+@media (min-width: 992px) {
+  .head-principal {
+    padding-top: calc(6rem + 104px);
+    padding-bottom: 6rem;
+  }
+
+  .head-principal .head-principal-heading {
+    font-size: 4rem;
+    line-height: 3.5rem;
+  }
+
+  .head-principal .pie-head {
+    font-size: 1.5rem;
   }
 }
 
@@ -146,4 +148,172 @@ body {
 .columna {
   width: 25%;
   float: left;
+}
+
+.page-section {
+  padding: 6rem 0;
+}
+
+.page-section .page-section-heading {
+  font-size: 2.25rem;
+  line-height: 2rem;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.container,
+.container-fluid,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container-sm,
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1.5rem;
+  margin-left: -1.5rem;
+}
+
+@media (min-width: 992px) {
+  .page-section .page-section-heading {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+
+.linea-custom {
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linea-custom .linea-custom-line {
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  background-color: #2c3e50;
+  border-radius: 1rem;
+  border-color: #2c3e50 !important;
+}
+
+.linea-custom .linea-custom-line:first-child {
+  margin-right: 1rem;
+}
+
+.linea-custom .linea-custom-line:last-child {
+  margin-left: 1rem;
+}
+
+.linea-custom .linea-custom-icon {
+  color: #2c3e50 !important;
+  font-size: 2rem;
+}
+
+.linea-custom.divider-light .linea-custom-line {
+  background-color: #fff;
+}
+
+.linea-custom.divider-light .linea-custom-icon {
+  color: #fff !important;
+}
+
+.head-principal {
+  padding-top: calc(6rem + 74px);
+  padding-bottom: 6rem;
+}
+
+.head-principal .head-principal-heading {
+  font-size: 2.75rem;
+  line-height: 2.75rem;
+}
+
+.head-principal .pie-head {
+  font-size: 1.25rem;
+}
+
+.head-principal .head-principal-avatar {
+  width: 15rem;
+}
+
+.cuadricula .cuadricula-item {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.cuadricula .cuadricula-item .cuadricula-item-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  background-color: rgba(128, 167, 219, 0.9);
+}
+
+.cuadricula .cuadricula-item .cuadricula-item-caption:hover {
+  opacity: 1;
+}
+
+.cuadricula .cuadricula-item .cuadricula-item-caption .cuadricula-item-caption-content {
+  font-size: 1.5rem;
+}
+
+.cuadricula-modal .cuadricula-modal-title {
+  font-size: 2.25rem;
+  line-height: 2rem;
+}
+
+.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #2c3e50;
+  color: #fff;
 }
